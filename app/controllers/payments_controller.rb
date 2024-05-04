@@ -3,7 +3,8 @@ class PaymentsController < ApplicationController
 
   # GET /payments or /payments.json
   def index
-    @payments = Payment.all
+    # @payments = Payment.all
+    @payments = Payment.paginate(page: params[:page]).includes([:person])
   end
 
   # GET /payments/1 or /payments/1.json

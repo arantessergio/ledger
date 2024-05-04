@@ -40,4 +40,10 @@
       <% end %>
     </tbody>
   </table>
+  <div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @payments %>
+    </div>
+    <%= will_paginate @debts, :container => false %>
+  </div>
 </div>

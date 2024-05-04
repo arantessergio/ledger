@@ -71,3 +71,9 @@
     <% end %>
   </tbody>
 </table>
+<div class="apple_pagination">
+  <div class="page_info">
+    <%= page_entries_info @people %>
+  </div>
+  <%= will_paginate @debts, :container => false %>
+</div>
