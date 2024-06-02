@@ -81,3 +81,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "letter_opener_web", "~> 3.0"
+
+gem "sidekiq", "~> 7.2"
+gem 'sinatra', '>= 1.3.0', :require => nil

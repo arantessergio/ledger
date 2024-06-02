@@ -81,4 +81,5 @@ Rails.application.configure do
     Bullet.enable = true
     Bullet.raise = true
   end
+  config.action_mailer.delivery_method = :letter_opener_web
 end

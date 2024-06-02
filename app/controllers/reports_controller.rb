@@ -1,5 +1,6 @@
 class ReportsController < ApplicationController
   def balance
-    redirect_to root_path, notice: 'Não implementado'
+    # ReportMailer.with(user: current_user).report_email.deliver_now
+    MailerJob.perform_now({ user: current_user })
   end
 end
